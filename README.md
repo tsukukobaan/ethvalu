@@ -1,9 +1,6 @@
 # BLOW ethvalu
 ## リポジトリ概要
-valu的なものを、ちゃんとトークン発行してやろうというものです。BLOW
-
-## 開発環境について
-[wiki](https://github.com/tsukukobaan/ethvalu/wiki "wiki")にまとめていきます。必ず目を通してください。
+valu的なものを、ちゃんとトークン発行してやろうというものです。BLOWと呼びます
 
 ## QuickStart
 * 仮想環境を立ち上げる
