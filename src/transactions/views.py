@@ -17,17 +17,11 @@ class SendTransactionView(View):
         if request.method == 'POST':
             query = request.POST.get("value")
             value = int(query) * 100000
-            # 1Blowあたり10000weiとして送金します
             print(value)
             from_wallet = WalletProfile.objects.get(user=request.user)
             to_user = request.POST.get("username")
             to_user = User.objects.get(username=to_user)
             to_wallet = WalletProfile.objects.get(user=to_user)
-            """DEBUG用
-            print(from_wallet.num)
-            print(request.user)
-            print(query)
-            """
             web3 = Web3(KeepAliveRPCProvider(host='localhost', port='8545'))
 
             transaction = formatters.input_transaction_formatter(web3.eth,
